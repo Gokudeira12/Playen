@@ -1,4 +1,4 @@
-//META{"name":"Explosion!","description":"Nothing special at now","author":"Haqz","version":"0.1"}*//{}
+//META{"name":"Draknessu","description":"Dark theme","author":"Haqz","version":"1.0"}*//{}
 
 
 /* 
@@ -21,13 +21,13 @@ The base is copied from den. I dont reservd the code!
 /* Make sure the image you are using is a HTTPS Link Or it WONT work */
 
 .app {
-    background-image: url(https://i.imgur.com/Yy4vzRv.jpg) !important;
+    background-image: url(https://i.imgur.com/NYDvTMh.jpg) !important;
     background-size: cover !important;
 }
 .layers { background: transparent !important;
 }
 .callout-backdrop {
-    background-image: url(https://i.imgur.com/Yy4vzRv.jpg) !important;
+    background-image: url(https://i.imgur.com/NYDvTMh.jpg) !important;
     background-size: cover !important;
 }
 
