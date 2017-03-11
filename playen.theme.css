@@ -63,7 +63,7 @@ body {
 .private-channels,
 .guild-header header,
 .typing,
-.ider-red span {
+.divider-red span {
     background: transparent !important;
 }
 
@@ -83,7 +83,6 @@ body {
     background: rgba(0, 0, 0, 0.0) !important;
 }
 .guild-channels .channel-text.selected {
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0)) !important;
 }
 .guild-channels .channel-text.selected:before,
 .guild-channels .channel-text.selected:hover:before,
@@ -99,7 +98,6 @@ body {
     height: 40px;
 }
 .guild-channels .channel-text:hover {
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.0)) !important;
 }
 .guild-channels ul .channel-text.unread:not(.selected):not(.channel-muted):before {
     left: -11px;
@@ -125,8 +123,8 @@ body {
     -webkit-filter: hue-rotate(275deg) saturate(400%);
 }
 .scroller-wrap .scroller::-webkit-scrollbar-thumb {
-    background-color: rgba(0, 0, 0, 0.3) !important;
-    border: 1px solid rgba(0, 0, 0, 0.3) !important;
+    background-color: rgba(0, 0, 0, 0.7) !important;
+    border: 1px solid rgba(0, 0, 0, 0.7) !important;
 }
 .scroller-wrap .scroller::-webkit-scrollbar-track-piece {
     background-color: rgba(0, 0, 0, 0.0) !important;
@@ -138,7 +136,6 @@ body {
 }
 .inline {
     background-color: rgba(0, 0, 0, 0.4);
-    border-radius: 5px;
     font-size: 12px;
     line-height: 22px;
 }
@@ -173,13 +170,12 @@ body {
     color: #000000;
 }
 .channel-members h2 {
-    border-radius: 10px;
     color: #ffffff !important;
     margin-left: 10px;
     padding-top: 10px;
 }
 .timestamp {
-    color: rgba(255, 255, 255, 0.7) !Important;
+    color: rgba(255, 255, 255, 0.7) !important;
     font-size: 13px;
 }
 .ider span {
@@ -201,7 +197,6 @@ body {
 }
 .hljs {
     background: transparent;
-    border-radius: 8px !important;
     color: #a3a3a3 !important;
     font-size: 16px !important;
     font-style: normal;
@@ -215,9 +210,7 @@ body {
 }
 .channel-textarea-inner {
     background-color: rgba(0, 0, 0, 0.3) !important;
-    border-radius: 7px;
     border: 1px solid rgba(0, 0, 0, 0.0) !important;
-    -webkit-mask-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 2%, rgba(0, 0, 0, 1) 68%, rgba(0, 0, 0, 0) 100%);
     padding-bottom: 15px !important;
     padding-top: 15px !important;
 }
@@ -255,8 +248,7 @@ body {
     height: 58px;
 }
 .chat .messages-wrapper {
-    -webkit-mask-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 8%, rgba(0, 0, 0, 1) 98%, rgba(0, 0, 0, 0) 100%) !important;
-}
+    }
 .links li a {
     margin-left: 1.2vw !important;
     color: #dbdbdb !important;
@@ -266,22 +258,21 @@ body {
 }
 .message-group {
     background-color: rgba(0, 0, 0, 0.7);
-	border-top: 3px rgb(232, 83, 232) solid;
+	border-top: 2px rgb(232, 83, 232) dashed;
     padding-left: 20px !important;
 }
 .scroller.channel-members {
     padding-top: 3px !important;
 }
 .guild-channels {
-    background-color: rgba(0, 0, 0, 0.3) !important;
+    background-color: rgba(0, 0, 0, 0.7) !important;
     border-right: 1px solid transparent;
     margin-left: 2vh !important;
     margin-top: 63px;
     margin-bottom: 0.1vh;
-    -webkit-mask-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 2%, rgba(0, 0, 0, 1) 98%, rgba(0, 0, 0, 0) 100%);
 }
 .account {
-    background-color: rgba(0, 0, 0, 0.3) !important;
+    background-color: rgba(0, 0, 0, 0.7) !important;
     border-top-left-radius: 5px !important;
     border-top-right-radius: 5px !important;
     margin-top: 1.6vh;
@@ -289,7 +280,6 @@ body {
     margin-bottom: 2.5vh;
     height: 8vh;
     width: auto;
-    -webkit-mask-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 2%, rgba(0, 0, 0, 1) 80%, rgba(0, 0, 0, 0) 100%);
 }
 
 .username {
@@ -302,17 +292,11 @@ body {
     margin-left: 3vh !important;
 }
 .guilds {
-    padding-top: 20px !important;
-    margin-top: 80%;
-    margin-bottom: 130%;
     background-color: rgba(0, 0, 0, 0.4);
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
     border-right: 4px solid rgba(0, 0, 0, 0.2);
     border-top: 4px solid rgba(0, 0, 0, 0.9);
     border-bottom: 4px solid rgba(0, 0, 0, 0.9);
-    -webkit-mask-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 7%, rgba(0, 0, 0, 1) 94%, rgba(0, 0, 0, 0) 100%);
-}
+    }
 .btn {
     width: auto !important;
 }
@@ -362,7 +346,6 @@ body {
 }
 .account .btn-group,
 #voice-connection .btn-group {
-    border-radius: 10px;
     background-color: rgba(0, 0, 0, .3) !important;
 }
 #voice-connection .btn {
@@ -374,12 +357,11 @@ body {
     border: none;
 }
 .channel-members {
-    background-color: rgba(0, 0, 0, 0.3) !important;
+    background-color: rgba(0, 0, 0, 0.7) !important;
     margin-right: 20px;
     margin-top: 3px !important;
     margin-bottom: 2.3vh;
-    -webkit-mask-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 2%, rgba(0, 0, 0, 1) 98%, rgba(0, 0, 0, 0) 100%);
-}
+    }
 .links {
     display: none;
 }
@@ -437,7 +419,6 @@ body {
 }
 .guild-header.guild-header-open ul {
     background-color: rgba(0, 0, 0, 0.6);
-    border-radius: 15px;
     margin-left: 1.9vh;
     width: 13.8vw;
 }
@@ -563,8 +544,7 @@ body {
     color: #00faf2 !important;
 }
 .highlight:hover {
-    background-color: rgba(0, 0, 0, 0.3) !important;
-    border-radius: 3px !important;
+    background-color: rgba(0, 0, 0, 0.7) !important;
     color: #00cccc !important;
 }
 .chat .title-wrap {
@@ -596,7 +576,6 @@ body {
     border: 2px dotted #00cccc !important;
 }
 .channel-members .member.popout-open {
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.0)) !important;
     border-left: 4px solid rgba(0, 204, 204, 0.9);
 }
 .status {
@@ -636,18 +615,14 @@ body {
 /* Private Chat */
 
 .private-channels .scroller {
-    background-color: rgba(0, 0, 0, 0.3) !important;
-    border-radius: 15px;
-    -webkit-mask-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 2%, rgba(0, 0, 0, 1) 98%, rgba(0, 0, 0, 0) 100%);
+    background-color: rgba(0, 0, 0, 0.7) !important;
     margin-left: 2vh;
 }
 .private-channels .channel.selected:before {
-    background-color: linear-gradient(to right, rgba(0, 204, 204, 0.4), rgba(0, 0, 0, 0.0)) !important;
     border-left: 2px solid #00cccc;
 }
 .priavte-channels .channel:hover::before {
     border-left: 2px solid #00cccc !important;
-    background-color: linear-gradient(to right, rgba(0, 204, 204, 0.4), rgba(0, 0, 0, 0.0)) !important;
 }
 
 
@@ -665,22 +640,18 @@ body {
 /* Friends */
 
 #friends .friends-table .friends-table-body {
-    background-color: rgba(0, 0, 0, 0.3) !important;
-    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.7) !important;
     border: 1px solid rgba(0, 204, 204, 0.0);
     margin-left: 1.6vw;
     margin-bottom: 2.5vh;
     margin-right: 2.5vh;
-    -webkit-mask-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 2%, rgba(0, 0, 0, 1) 98%, rgba(0, 0, 0, 0) 100%);
 }
 #friends .friends-table .friends-table-header {
-    background-color: rgba(0, 0, 0, 0.3) !important;
-    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.7) !important;
     margin-left: 1.6vw;
     height: 3vh;
     margin-bottom: 1.2vh;
     margin-right: 2.5vh;
-    -webkit-mask-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 20%, rgba(0, 0, 0, 1) 80%, rgba(0, 0, 0, 0) 100%);
 }
 #friends .friends-header {
     margin-left: 1.6vw;
@@ -771,20 +742,16 @@ ul li a {
 
 .avatar-uploader-inner {
     background-color: rgba(0, 0, 0, 0.1) !Important;
-    border-radius: 20px !important;
 }
 #settings-username {
-    border-radius: 10px;
     padding-left: 10px;
     border-color: #00cccc !Important;
 }
 #settings-email {
-    border-radius: 10px;
     padding-left: 10px;
     border-color: #00cccc !Important;
 }
 #settings-current-password {
-    border-radius: 10px;
     padding-left: 10px;
     border-color: #00cccc !Important;
 }
@@ -802,7 +769,7 @@ a.remove-button {
 }
 .settings .settings-inner,
 .settings .settings-actions {
-    background-color: rgba(0, 0, 0, 0.3) !important;
+    background-color: rgba(0, 0, 0, 0.7) !important;
 }
 .settings .settings-header {
     background-color: rgba(0, 0, 0, 0.7) !important;
@@ -822,7 +789,7 @@ a.remove-button {
     border-color: rgba(0, 0, 0, 0.5) !important;
 }
 .radio-inner {
-    background-color: rgba(255, 255, 255, 0.3) !important;
+    background-color: rgba(255, 255, 255, 0.7) !important;
 }
 .radio {
     color: #ffffff !Important;
@@ -881,10 +848,10 @@ div p a {
 /* Add new server popup window */
 
 .form-inner header {
-    color: #00cccc !important;
+    color: rgb(89, 71, 89) !important;
 }
 .form-inner {
-    background-color: rgba(0, 0, 0, 0.1) !important;
+    background-color: rgba(0, 0, 0, 0.7) !important;
 }
 .action-header {
     color: #00cccc !important;
@@ -941,7 +908,7 @@ img.image {
     height: auto !important;
     margin-right: auto !important; 
     margin-left: auto !important;
-
+	border-radius: 5px;
 }
 
 #app-mount > div > span:nth-child(6) > div.modal > div > div > a{
@@ -953,6 +920,7 @@ img.image {
 #app-mount > div > span:nth-child(6) > div.modal > div > div > a:hover{
     text-align: center;
     color: #00cccc;
+	border-radius: 5px;
 }
 
 div.form-inner {
@@ -1048,8 +1016,7 @@ div.help-text {
     opacity: 0.7;
 }
 .theme-dark .channel-members .member:hover {
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.0)) !important;
-    border-left: 4px solid rgba(0, 204, 204, 0.3);
+    border-left: 4px solid rgba(0, 204, 204, 0.7);
 }
 li div span {
     color: rgba(0, 204, 204, 0.8) !important;
@@ -1172,7 +1139,6 @@ div.new-messages-bar button {
 #pubs-container {
     background: transparent !important;
     background-color: rgba(0, 0, 0, 0.7) !important;
-    border-radius: 10px !important;
 }
 
 #pubs-header {
@@ -1182,22 +1148,20 @@ div.new-messages-bar button {
 }
 
 .bda-dark .server-row {
-    background-color: rgba(0, 0, 0, 0.3) !important;
+    background-color: rgba(0, 0, 0, 0.7) !important;
     transition: all .3s ease-in-out;
 }
 .bda-light .server-row {
-    background-color: rgba(0, 0, 0, 0.3) !important;
+    background-color: rgba(0, 0, 0, 0.7) !important;
     transition: all .3s ease-in-out;
 }
 .server-row button {
-    background-color: rgba(0, 244, 244, 0.4) !important;
-    border-radius: 5px;
+    background-color: rgba(0, 244, 244, 0.7) !important;
     transition: all .3s ease-in-out;
 }
 
 .server-row button:hover {
     background-color: rgba(0, 244, 244, 0.7) !important;
-    border-radius: 5px;
     transition: all .3s ease-in-out;
 }
 
@@ -1205,7 +1169,6 @@ div.new-messages-bar button {
     background-color: rgba(0, 204, 204, 0.9) !important;
     transition: all .3s ease-in-out;
     color: #fff !important;
-    border-radius:5px;
 
 }
 input#pubs-sterm {
@@ -1213,7 +1176,6 @@ input#pubs-sterm {
     transition: all .3s ease-in-out;
     color: #fff !important;
     padding-left:7px;
-    border-radius:5px;
     width:120px !important;
     margin-right:10px !important;
     margin-left:-10px !important;
@@ -1222,7 +1184,6 @@ button#pubs-searchbtn {
     background-color: rgba(0, 204, 204, 0.9) !important;
     transition: all .3s ease-in-out;
     color: #fff !important;
-    border-radius:5px;
 }
 
 div.bd-dropdown-list {
@@ -1238,7 +1199,6 @@ div.bd-dropdown-list {
 
 
 .server-row .server-icon {
-    border-radius: 5px !important;
     border: 2px solid #00cccc;
 }
 
@@ -1268,19 +1228,19 @@ div.bd-dropdown {
     background-color: rgba(0, 204, 204, 0.5) !important;
     border-bottom-right-radius: 10px !important;
     border-bottom-left-radius: 10px !important;
-    border-top: 1px solid rgba(255,255,255,0.3);
+    border-top: 1px solid rgba(255,255,255,0.7);
 }
 
 
 /* Scroller for popup servers window */
 
 #pubs-scroller::-webkit-scrollbar-thumb {
-    background-color: rgba(0, 0, 0, 0.3) !important;
-    border: 2px solid rgba(0, 0, 0, 0.4) !important;
+    background-color: rgba(0, 0, 0, 0.7) !important;
+    border: 2px solid rgba(0, 0, 0, 0.7) !important;
 }
 #pubs-scroller::-webkit-scrollbar-track-piece {
-    background-color: rgba(0, 0, 0, 0.3) !important;
-    border: 1px solid rgba(0, 0, 0, 0.2) !important;
+    background-color: rgba(0, 0, 0, 0.7) !important;
+    border: 1px solid rgba(0, 0, 0, 0.7) !important;
 }
 .bda-dark #bda-qem-twitch-container .scroller::-webkit-scrollbar,
 .bda-dark #bda-qem-twitch-container .scroller::-webkit-scrollbar-track,
@@ -1288,28 +1248,28 @@ div.bd-dropdown {
 .bda-dark #pubs-container .scroller::-webkit-scrollbar,
 .bda-dark #pubs-container .scroller::-webkit-scrollbar-track,
 .bda-dark #pubs-container .scroller::-webkit-scrollbar-track-piece {
-    background-color: rgba(0, 0, 0, 0.3) !important;
-    border: 1px solid rgba(0, 0, 0, 0.2) !important;
+    background-color: rgba(0, 0, 0, 0.7) !important;
+    border: 1px solid rgba(0, 0, 0, 0.7) !important;
 }
 .bda-dark #bda-qem-favourite-container .scroller::-webkit-scrollbar-thumb,
 .bda-dark #bda-qem-twitch-container .scroller::-webkit-scrollbar-thumb,
 .bda-dark #pubs-container .scroller::-webkit-scrollbar-thumb,
 .bda-dark .emoji-picker .scroller::-webkit-scrollbar-thumb {
-    background-color: rgba(0, 0, 0, 0.3) !important;
-    border: 2px solid rgba(0, 0, 0, 0.4) !important;
+    background-color: rgba(0, 0, 0, 0.7) !important;
+    border: 2px solid rgba(0, 0, 0, 0.7) !important;
 }
 .bda-dark #bda-qem-favourite-container .scroller::-webkit-scrollbar-thumb:active,
 .bda-dark #bda-qem-twitch-container .scroller::-webkit-scrollbar-thumb:active,
 .bda-dark #pubs-container .scroller::-webkit-scrollbar-thumb:active,
 .bda-dark .emoji-picker .scroller::-webkit-scrollbar-thumb:active {
-    background-color: rgba(0, 0, 0, 0.3) !important;
-    border: 1px solid rgba(0, 0, 0, 0.2) !important;
+    background-color: rgba(0, 0, 0, 0.7) !important;
+    border: 1px solid rgba(0, 0, 0, 0.7) !important;
 }
 .bda-dark #bda-qem-favourite-container .scroller::-webkit-scrollbar,
 .bda-dark #bda-qem-favourite-container .scroller::-webkit-scrollbar-track,
 .bda-dark #bda-qem-favourite-container .scroller::-webkit-scrollbar-track-piece {
-    background-color: rgba(0, 0, 0, 0.3) !important;
-    border: 1px solid rgba(0, 0, 0, 0.2) !important;
+    background-color: rgba(0, 0, 0, 0.7) !important;
+    border: 1px solid rgba(0, 0, 0, 0.7) !important;
 }
 
 
