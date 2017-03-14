@@ -21,13 +21,14 @@ The base is copied from den. I dont reservd the code!
 /* Make sure the image you are using is a HTTPS Link Or it WONT work */
 
 .app {
-    background-image: url(https://i.imgur.com/NYDvTMh.jpg) !important;
+    background-image: url(https://i.imgur.com/8QXOH9o.jpg) !important;
     background-size: cover !important;
+    font-family: 'Lato', sans-serif;
 }
 .layers { background: transparent !important;
 }
 .callout-backdrop {
-    background-image: url(https://i.imgur.com/NYDvTMh.jpg) !important;
+    background-image: url(https://i.imgur.com/8QXOH9o.jpg) !important;
     background-size: cover !important;
 }
 
@@ -93,9 +94,12 @@ body {
     border-left: 3px solid #00cccc;
 }
 .avatar-large.animate {
-    border: 2px solid rgba(0, 204, 204, 0.6) !important;
     width: 40px;
     height: 40px;
+}
+.avatar-large{
+    -webkit-filter: drop-shadow(0 0 2px #ffbcfd) drop-shadow(0 0 2px cyan) drop-shadow(0 0 2px #ffbcfd);
+
 }
 .guild-channels .channel-text:hover {
 }
@@ -153,11 +157,12 @@ body {
     background: transparent !important;
 }
 .markup {
-    color: #ffffff;
+    color: #ffffff !important;
     font-size: 16px;
 }
 .markup a {
     color: #17f0ff !important;
+    font-style: italic;
 }
 .member.member-status.member-status-offline:hover {
     background-color: rgba(0, 0, 0, 0.2) !important;
@@ -197,10 +202,11 @@ body {
 }
 .hljs {
     background: transparent;
-    color: #a3a3a3 !important;
+    background-color: lightblue !important;
+    color: green !important;
     font-size: 16px !important;
     font-style: normal;
-    font-weight: normal;
+    font-weight: 600;
 }
 .member-activity {
     color: #ffffff !important;
@@ -258,7 +264,6 @@ body {
 }
 .message-group {
     background-color: rgba(0, 0, 0, 0.7);
-	border-top: 2px rgb(232, 83, 232) dashed;
     padding-left: 20px !important;
 }
 .scroller.channel-members {
@@ -553,7 +558,7 @@ body {
     margin-top: 1px;
 }
 .friends-icon {
-    background-color: rgba(0, 204, 204, 0.9);
+    background-color: rgba(0, 235, 110, 0.7);
 }
 .friends-online {
     color: #ffffff;
@@ -589,12 +594,12 @@ body {
 /* Unread Channel Message */
 
 .guild-channels .channel-text.unread:not(.selected):not(.channel-muted):before {
-    background: #00CCCC !important;
+    background: #00ff6e !important;
 }
 /* Guild Unread Message */
 
 .guilds-wrapper .guilds .guild.unread:before {
-    background: #00CCCC !important;
+    background: #00ff6e !important;
 }
 /* Guild Unread Message */
 
@@ -610,7 +615,7 @@ body {
 }
 .channel-textarea-inner textarea {
     padding-left: 10px !important;
-    color: rgba(0, 204, 204, 0.7) !Important;
+    color: rgba(12, 129, 255, 0.7) !important;
 }
 /* Private Chat */
 
@@ -866,15 +871,16 @@ div p a {
 
 .channel-textarea-inner textarea {
     padding-left: 10px !important;
-    color: rgba(0, 204, 204, 0.7) !important;
+    color: #ffffff !important;
     background-color: transparent !important;
+    font-size: 16px;
 }
 span.channel-name {
     color: white !important;
 }
 
 div.markup {
-    color: rgba(255, 255, 255, 0.9) !important;
+    color: #ffffff !important;
 }
 a.channel-name.channel-private {
     color: rgba(255, 255, 255, 0.9) !important;
@@ -1023,6 +1029,8 @@ li div span {
 }
 .channel-name:before {
     color: rgba(0, 204, 204, 0.9) !important;
+    content: "•" !important; 
+    margin-right: 3px !important;
 }
 .action.create {
     background-color: #ffffff !important;
@@ -1031,7 +1039,7 @@ li div span {
     background-color: #ffffff !important;
 }
 code.hljs {
-    color: #089494 !important;
+    color: green !important;
 }
 .account .btn-settings:hover:after {
     -webkit-mask-image: url(/assets/60f6b0788a5d9394b44261ef5d8ecffc.svg);
@@ -1400,4 +1408,11 @@ div[data-bd="backdrop"] {
 
 .icon-instant-invite {
   background-image: url('https://ditmcouk.ipage.com/noottech/discord-icons/cyan-firewatch/cyan-instant-invite.svg') !important;
+}
+.mention{
+    color: lightgrey !important;
+    font-style: italic bold !important;
+}
+button.win-minimize,button.win-maximize,button.win-close{
+    background-color: green;
 }
